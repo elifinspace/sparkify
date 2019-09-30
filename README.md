@@ -1,8 +1,11 @@
 # Sparkify User Churn Prediction
 Udacity Data Scientist Nanodegree Capstone Project
  
-Medium Blog Post: https://medium.com/@elifsurmelif/sparkify-user-churn-prediction-eff0868c5554
-If you have difficulty in displaying .ipynb files please go to  https://nbviewer.jupyter.org/ and paste the link that you're trying to display the notebook.
+Sparkify is a fictional music streaming platform created by Udacity. 
+For this project we are given log data of this platform in order to drive insights and create a machine learning pipeline to predict churn. 
+
+mini, medium and large datasets(only on AWS public) are available.
+I have used medium scale data that I have processed with Spark on AWS EMR.
 
 ## Getting Started
 
@@ -29,18 +32,22 @@ Dataset:
   - First install all the packages stated above.
   - Run the commands below in your working directory to open the project in jupyter lab:
     ```
-    git clone 
+    git clone https://github.com/elifinspace/sparkify.git
     
     jupyter lab
    
     ```
-  - sparkify.ipynb : This notebook has all the functions and visualisations.
+  - sparkify_final.ipynb : This notebook has all the functions for processing the data and ml pipeline.
+  - sparkify_exploration_visuals: This notebook has some sample visuals that have been generated during initial investigation. More detailed analysis could have been done to reveal relations and gain insights.
+  
+  If you have difficulty in displaying .ipynb files please go to  https://nbviewer.jupyter.org/ and paste the link that you're trying to display the notebook.
 
 ## Analysis and Discussion
 
 The outputs are generated using medium sized dataset. This might have introduced a slight imbalance in the data.
-
+It is also challenging to understand latent relations in the data.Feature selection is really important otherwise you might end up with a model with accuracy 1.0 but it is not true.
 Moreover as a further work a common practice, A/B test can be considered.A set of actions can be determined to reduce churn and population can be split into control and experiment groups to validate the model and results.
+More details can be found on Medium Blog Post: https://medium.com/@elifsurmelif/sparkify-user-churn-prediction-eff0868c5554
 
 ## Authors
 
