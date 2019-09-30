@@ -36,6 +36,11 @@ Dataset:
     ```
   - sparkify.ipynb : This notebook has all the functions and visualisations.
 
+## Analysis and Discussion
+
+The outputs are generated using medium sized dataset. This might have introduced a slight imbalance in the data.
+
+Moreover as a further work a common practice, A/B test can be considered.A set of actions can be determined to reduce churn and population can be split into control and experiment groups to validate the model and results.
 
 ## Authors
 
