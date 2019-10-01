@@ -7,6 +7,8 @@ For this project we are given log data of this platform in order to drive insigh
 mini, medium and large datasets(only on AWS public) are available.
 I have used medium scale data that I have processed with Spark on AWS EMR.
 
+**Medium** : https://medium.com/@elifsurmelif/sparkify-user-churn-prediction-eff0868c5554
+
 ## Getting Started
 
 Instructions below will help you setup your local machine to run the copy of this project.
