@@ -45,6 +45,9 @@ Dataset:
   
   If you have difficulty in displaying .ipynb files please go to  https://nbviewer.jupyter.org/ and paste the link that you're trying to display the notebook.
   And you can use http://htmlpreview.github.io/ to display html files.
+## Metrics 
+I have used f1score and AUC when evaluating the model.
+It is important for us to be precise when labeling a customer as a churn. Because if we're giving away free products, we might be causing unnecessary cost if the user is not thinking of churn .or if we're sending messages regarding their reduced activity, this might get the user confused.
 
 ## Analysis and Discussion
 
