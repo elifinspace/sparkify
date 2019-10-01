@@ -48,7 +48,15 @@ Dataset:
 # Steps
 Details for the following steps are in sparkify_exploration_visuals.ipynb:
 ## Data Exploration 
+We have 2 months of data for 449 customers.
+Data has nulls in general when a particular event occurs "Log out".
+Data is imbalanced. We have 99 churn in 449 customers.
+Stats based on gender. level(free/paid) can be found in the notebook mentioned.
+
 ## Preprocessing
+Null user id's, log out records are removed.
+Timestamp column is used to generate month, date and timestamp columns for further work.
+
 
 You can find details for the following steps in sparkify_final_.ipynb :
 ## Feature Generation
@@ -61,7 +69,7 @@ pyspark.ml stringIndexer (creates indexes for categorical variables), VectorAsse
 I have used f1score and AUC when evaluating the models.
 Logistic Regression, Random Forest Classifier and Gradient Boosting Classifier are experimented.
 Random Forest Classifier is chosen as it performed the best and it is not effected by imbalance in the data.
-In our case our data is imbalanced. We have 99 churn in 449 customers.
+
 It is important for us to be precise when labeling a customer as a churn. Because if we're giving away free products, we might be causing unnecessary cost if the user is not thinking of churn .or if we're sending messages regarding their reduced activity, this might get the user confused.
 
 ## Analysis and Discussion
