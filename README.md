@@ -38,7 +38,7 @@ Dataset:
     jupyter lab
    
     ```
-  - sparkify_final.ipynb : This notebook has all the functions for processing the data and ml pipeline.
+  - Sparkify_final_.ipynb : This notebook has all the functions for processing the data and ml pipeline.
   - sparkify_exploration_visuals.ipynb: This notebook has some sample visuals that have been generated during initial investigation. More detailed analysis could have been done to reveal relations and gain insights.
   
   If you have difficulty in displaying .ipynb files please go to  https://nbviewer.jupyter.org/ and paste the link that you're trying to display the notebook.
