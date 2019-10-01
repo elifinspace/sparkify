@@ -53,15 +53,21 @@ Data has nulls in general when a particular event occurs "Log out".
 Data is imbalanced. We have 99 churn in 449 customers.
 Stats based on gender. level(free/paid) can be found in the notebook mentioned.
 
+![alt text] https://github.com/elifinspace/sparkify/blob/master/state_churn.png?raw=true
+
 ## Preprocessing
 Null user id's, log out records are removed.
 Timestamp column is used to generate month, date and timestamp columns for further work.
 
+![alt text] https://github.com/elifinspace/sparkify/blob/master/null_in_raw.png?raw=true
+![alt text] https://github.com/elifinspace/sparkify/blob/master/registered_customers.png?raw=true
 
 You can find details for the following steps in sparkify_final_.ipynb :
 ## Feature Generation
 Aggregates on itemInSession, sessionId, page, length, time since registration are generated.
 gender, level and location are left as categorical fields.
+![alt text] https://github.com/elifinspace/sparkify/blob/master/feature_Df.png?raw=true
+![alt text] https://github.com/elifinspace/sparkify/blob/master/features.png?raw=true
 ## Postprocessing
 pyspark.ml stringIndexer (creates indexes for categorical variables), VectorAssembler (merges numerical features into a vector) and pipeline is used.
 ## Modelling and Metrics 
