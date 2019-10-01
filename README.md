@@ -53,7 +53,7 @@ Data has nulls in general when a particular event occurs "Log out".
 Data is imbalanced. We have 99 churn in 449 customers.
 Stats based on gender. level(free/paid) can be found in the notebook mentioned.
 
-![alt text] https://github.com/elifinspace/sparkify/blob/master/state_churn.png?raw=true
+![alt text](https://github.com/elifinspace/sparkify/blob/master/state_churn.png?raw=true)
 
 ## Preprocessing
 Null user id's, log out records are removed.
