@@ -40,13 +40,28 @@ Dataset:
     jupyter lab
    
     ```
-  - Sparkify_final_.ipynb : This notebook has all the functions for processing the data and ml pipeline.
+  - sparkify_final_.ipynb : This notebook has all the functions for processing the data and ml pipeline.
   - sparkify_exploration_visuals.ipynb: This notebook has some sample visuals that have been generated during initial investigation. More detailed analysis could have been done to reveal relations and gain insights.
   
   If you have difficulty in displaying .ipynb files please go to  https://nbviewer.jupyter.org/ and paste the link that you're trying to display the notebook.
   And you can use http://htmlpreview.github.io/ to display html files.
-## Metrics 
-I have used f1score and AUC when evaluating the model.
+# Steps
+Details for the following steps are in sparkify_exploration_visuals.ipynb:
+## Data Exploration 
+## Preprocessing
+
+You can find details for the following steps in sparkify_final_.ipynb :
+## Feature Generation
+Aggregates on itemInSession, sessionId, page, length, time since registration are generated.
+gender, level and location are left as categorical fields.
+## Postprocessing
+pyspark.ml stringIndexer (creates indexes for categorical variables), VectorAssembler (merges numerical features into a vector) and pipeline is used.
+## Modelling and Metrics 
+
+I have used f1score and AUC when evaluating the models.
+Logistic Regression, Random Forest Classifier and Gradient Boosting Classifier are experimented.
+Random Forest Classifier is chosen as it performed the best and it is not effected by imbalance in the data.
+In our case our data is imbalanced. We have 99 churn in 449 customers.
 It is important for us to be precise when labeling a customer as a churn. Because if we're giving away free products, we might be causing unnecessary cost if the user is not thinking of churn .or if we're sending messages regarding their reduced activity, this might get the user confused.
 
 ## Analysis and Discussion
